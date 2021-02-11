@@ -1,6 +1,6 @@
 //jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
-fdescribe('root', () => {
+describe('root', () => {
   beforeEach(async () =>   
   {
     
