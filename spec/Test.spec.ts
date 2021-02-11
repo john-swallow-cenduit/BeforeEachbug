@@ -1,8 +1,13 @@
+//jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 fdescribe('root', () => {
-  beforeEach(async () => {
+  beforeEach(async () =>   
+  {
+    
     console.log('root: begin');
-    await sleep(1500);
+    // If this sleep exceeds the default timeout the issue
+    // will appear.
+    await sleep(5000);
     console.log('root: end');
   });
 

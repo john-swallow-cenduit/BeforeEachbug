@@ -1,3 +1,4 @@
+//jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -10,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 fdescribe('root', () => {
     beforeEach(() => __awaiter(this, void 0, void 0, function* () {
         console.log('root: begin');
-        yield sleep(1500);
+        yield sleep(5000);
         console.log('root: end');
     }));
     describe('inner', () => {
